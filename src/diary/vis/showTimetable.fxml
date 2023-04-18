@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="diary.controller.ShowTimetableController">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #D8D2D2;">
+            <children>
+                <Button fx:id="exitToMenuButton" layoutX="10.0" layoutY="539.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="179.0" text="Выйти в главное меню" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="384.0" layoutY="14.0" prefHeight="34.0" prefWidth="123.0" text="Ежедневник">
+            <font>
+                <Font name="Calibri Italic" size="23.0" />
+            </font>
+        </Label>
+      <ScrollPane fx:id="scrollPaneField" layoutX="268.0" layoutY="254.0" prefHeight="330.0" prefWidth="358.0">
+         <content>
+            <VBox fx:id="VBoxField" prefHeight="426.0" prefWidth="358.0" />
+         </content>
+      </ScrollPane>
+      <Text layoutX="389.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите дату:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="enterDateField" layoutX="356.0" layoutY="112.0" prefHeight="28.0" prefWidth="179.0" />
+      <Button fx:id="showTimetableButton" layoutX="352.0" layoutY="160.0" mnemonicParsing="false" text="Показать уведомления по дате" />
+      <Text fx:id="errorTextField" fill="#fa0a0a" layoutX="268.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="358.39999999999986">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
